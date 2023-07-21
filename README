@@ -1,0 +1,56 @@
+HTTP VERB EXAMPLES
+
+The word "Record" usually means an item in the database
+
+GET => Used to get information
+POST => Used to create new records
+PUT => Used to update existing records
+DELETE => Used to delete records
+PATCH?
+HEAD?
+Others?
+
+All of these examples do the same thing, but
+using different HTTP verbs
+
+Only GET works easily from a browser URL
+curl localhost:8080/example1
+
+curl - X PUT localhost:8080/example1
+
+curl - X POST localhost:8080/example1
+
+curl - X DELETE localhost:8080/example1
+
+
+Try curl with localhost:8080/example2?number=100
+
+
+DO YOU WANT TO LEARN SOME GO ANOTHER WAY? https://go.dev/tour/welcome/1
+
+EXERCISES:
+1. Write something about yourself and return it to the browser
+
+- Register a "/my_info" handler
+- Write your name and something about yourself as output
+
+
+2. Random number generator
+- Create an endpoint that picks a random number and shows it
+
+3. Display current time and date at "/now"
+
+4. Fizzbuzz:
+This is the infamous fizzbuzz problem
+All software devs should be comfortable solving this
+in an interview setting on a whiteboard
+
+The fizzbuzz problem has the following requirements:
+
+When a number is a multiple of 3, print fizz
+When a number is a multiple of 5, print buzz
+When a number is a multiple of 3 and 5, print fizzbuzz
+
+Create an endpoint "/fizzbuzz" that has all numbers from 1 to to a query parameter that match the above rules
+
+So localhost:8080/fizzbuzz/?limit=100 would do fizzbuzz from 0 to 100
