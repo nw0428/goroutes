@@ -1,3 +1,7 @@
+If you have go installed you should be able to run this by running
+`go run`
+
+
 HTTP VERB EXAMPLES
 
 The word "Record" usually means an item in the database
