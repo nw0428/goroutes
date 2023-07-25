@@ -8,6 +8,7 @@ import (
 )
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusAccepted)
 	fmt.Fprintf(w, "Hi there, I love %s!\nThis request is a %s", r.URL.Path[1:], r.Method)
 }
 

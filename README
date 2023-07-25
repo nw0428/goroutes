@@ -16,11 +16,11 @@ using different HTTP verbs
 Only GET works easily from a browser URL
 curl localhost:8080/example1
 
-curl - X PUT localhost:8080/example1
+curl - X PUT localhost:8080/David
 
-curl - X POST localhost:8080/example1
+curl - X POST localhost:8080/George
 
-curl - X DELETE localhost:8080/example1
+curl - X DELETE localhost:8080/Samantha
 
 
 Try curl with localhost:8080/example2?number=100
@@ -54,3 +54,12 @@ When a number is a multiple of 3 and 5, print fizzbuzz
 Create an endpoint "/fizzbuzz" that has all numbers from 1 to to a query parameter that match the above rules
 
 So localhost:8080/fizzbuzz/?limit=100 would do fizzbuzz from 0 to 100
+
+5. Guess the number:
+Make a an endpoint that lets the user guess a number between 0 and 10 and tells them if they got it right or not!
+You can either randomly generate a "correct" number every time or have it always be 4 (which is the accepted standard
+random number).
+Why can't we let the user make multiple guesses?
+
+6. Using curl -X <whatever> Make an endpoint that lets you play rock paper scissors on a PUT but shows fizzbuzz on a
+DELETE. All other verbs should return a 404!
